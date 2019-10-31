@@ -38,5 +38,40 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+console.log(logo);
+
+const mycodeImage = document.getElementById('cta-img');
+mycodeImage.setAttribute('src', siteContent['cta']['img-src']);
+console.log(mycodeImage);
+
+const arrayNav = document.querySelectorAll('a');
+arrayNav[0].textContent = (siteContent['nav']['nav-item-1']);
+arrayNav[1].textContent = (siteContent['nav']['nav-item-2']);
+arrayNav[2].textContent = (siteContent['nav']['nav-item-3']);
+arrayNav[3].textContent = (siteContent['nav']['nav-item-4']);
+arrayNav[4].textContent = (siteContent['nav']['nav-item-5']);
+arrayNav[5].textContent = (siteContent['nav']['nav-item-6']);
+
+const ctaH1 = document.querySelectorAll('h1');
+ctaH1[0].textContent = (siteContent['cta']['h1']);
+
+const ctaButton = document.querySelectorAll('button');
+ctaButton[0].textContent = (siteContent['cta']['button']);
+
+const mainFeaturesH4 = document.querySelectorAll('h4');
+mainFeaturesH4[0].textContent = (siteContent['main-content']['features-h4']);
+
+const pTagContent = document.querySelectorAll('p');
+pTagContent[0].textContent = (siteContent['main-content']['features-content']);
+
+const topContent2 = document.querySelectorAll('h4');
+topContent2[1].textContent = (siteContent['main-content']['about-h4']);
+
+const pTagContent2 = document.querySelectorAll('p');
+pTagContent2[1].textContent = (siteContent['main-content']['about-content']);
+
+const logo2 = document.getElementById("middle-img");
+logo2.setAttribute('src', siteContent['main-content']['middle-img-src']);
