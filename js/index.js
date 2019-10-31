@@ -75,3 +75,36 @@ pTagContent2[1].textContent = (siteContent['main-content']['about-content']);
 
 const logo2 = document.getElementById("middle-img");
 logo2.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+const bottomH4 = document.querySelectorAll('h4');
+bottomH4[2].textContent = (siteContent['main-content']['services-h4']);
+
+const pTagBottom = document.querySelectorAll('p');
+pTagBottom[2].textContent = (siteContent['main-content']['services-content']);
+
+const bottomH41 = document.querySelectorAll('h4');
+bottomH41[3].textContent = (siteContent['main-content']['product-h4']);
+
+const ptagBottom1 = document.querySelectorAll('p');
+ptagBottom1[3].textContent = (siteContent['main-content']['product-content']);
+
+const bottomH42 = document.querySelectorAll('h4');
+bottomH42[4].textContent = (siteContent['main-content']['vision-h4']);
+
+const ptagBottom2 = document.querySelectorAll('p');
+ptagBottom2[4].textContent = (siteContent['main-content']['vision-content']);
+
+const contactInfoH4 = document.querySelectorAll('h4');
+contactInfoH4[5].textContent = (siteContent['contact']['contact-h4']);
+
+const ptagContact = document.querySelectorAll('p');
+ptagContact[5].textContent = (siteContent['contact']['address']);
+
+const ptagContact1 = document.querySelectorAll('p');
+ptagContact1[6].textContent = (siteContent['contact']['phone']);
+
+const ptagContact2 = document.querySelectorAll('p');
+ptagContact2[7].textContent = (siteContent['contact']['email']);
+
+const footerInfo = document.getElementsByTagName('p');
+footerInfo[8].textContent = (siteContent['footer']['copyright']);
