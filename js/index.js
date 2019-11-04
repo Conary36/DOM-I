@@ -118,11 +118,16 @@ greenLinks[3].style.color = 'green';
 greenLinks[4].style.color = 'green';
 greenLinks[5].style.color = 'green';
 
-let newItem = document.createElement('a');
-let newText = document.createTextNode('Hello');
-newItem.appendChild(newText);
 
-let frontParent = document.getElementsByTagName('nav');
-let frontChild = document.getElementById('a');
-frontParent.replaceChild(newItem, frontChild);
-//front.insertBefore(newItem, front.childNodes[0]);
+const newEl = document.querySelector('header');
+const subHeadLine = document.createElement('h1');
+subHeadLine.textContent = "Hello!";
+subHeadLine.style.fontSize = '2.8rem';
+newEl.appendChild(subHeadLine);
+
+const nextContent = document.querySelector('.main-content');
+const subContent = document.createElement('h2');
+subContent.textContent = "Check It Out!";
+subContent.style.color = "red";
+nextContent.prepend(subContent);
+
