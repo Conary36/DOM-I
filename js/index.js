@@ -55,6 +55,7 @@ arrayNav[3].textContent = (siteContent['nav']['nav-item-4']);
 arrayNav[4].textContent = (siteContent['nav']['nav-item-5']);
 arrayNav[5].textContent = (siteContent['nav']['nav-item-6']);
 
+
 const ctaH1 = document.querySelectorAll('h1');
 ctaH1[0].textContent = (siteContent['cta']['h1']);
 
@@ -108,3 +109,20 @@ ptagContact2[7].textContent = (siteContent['contact']['email']);
 
 const footerInfo = document.getElementsByTagName('p');
 footerInfo[8].textContent = (siteContent['footer']['copyright']);
+
+const greenLinks = document.getElementsByTagName('a');
+greenLinks[0].style.color = 'green';
+greenLinks[1].style.color = 'green';
+greenLinks[2].style.color = 'green';
+greenLinks[3].style.color = 'green';
+greenLinks[4].style.color = 'green';
+greenLinks[5].style.color = 'green';
+
+let newItem = document.createElement('a');
+let newText = document.createTextNode('Hello');
+newItem.appendChild(newText);
+
+let frontParent = document.getElementsByTagName('nav');
+let frontChild = document.getElementById('a');
+frontParent.replaceChild(newItem, frontChild);
+//front.insertBefore(newItem, front.childNodes[0]);
